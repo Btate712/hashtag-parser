@@ -9,7 +9,7 @@ class Post {
 
   get tags() {
     // split rawText into individual words and store in "words" array
-    const words = this.rawText.split(" ");
+    const words = this.rawText.split(/\s/);
 
     // filter "words" array and return all words that start with "#"
     return words.filter(word => word[0] === "#");
