@@ -3,9 +3,7 @@ class Post {
     this.rawText = rawText;
   }
 
-  rawText = "";
-
-  get rawText() {
+  get text() {
     return this.rawText;
   }
 
@@ -31,4 +29,6 @@ const parse = () => {
     node.innerHTML = tag;
     document.getElementById("tags").appendChild(node);
   });
+
+  console.log(post.text);
 }
