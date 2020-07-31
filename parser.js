@@ -29,6 +29,4 @@ const parse = () => {
     node.innerHTML = tag;
     document.getElementById("tags").appendChild(node);
   });
-
-  console.log(post.text);
 }
